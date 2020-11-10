@@ -315,7 +315,7 @@ button:focus{
                 line-height: 145%;
                 font-size: 5rem;
                 font-weight: 400;
-                font-family: 'Courgette', cursive;
+                font-family: 'Courgette', cursive, sans-serif;
                 font-weight: 400;
                 color:#fff;
         }
@@ -842,7 +842,7 @@ button:focus{
             top: 12rem;
             right: 2rem;
             width: 85%;
-        
+        line-height: 1.5;
         }
     
         &__heading-span {

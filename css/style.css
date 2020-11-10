@@ -223,7 +223,7 @@ button:focus {
     line-height: 145%;
     font-size: 5rem;
     font-weight: 400;
-    font-family: 'Courgette', cursive;
+    font-family: 'Courgette', cursive, sans-serif;
     font-weight: 400;
     color: #fff; }
   .header__quote::before {
@@ -585,7 +585,8 @@ button:focus {
     position: absolute;
     top: 12rem;
     right: 2rem;
-    width: 85%; }
+    width: 85%;
+    line-height: 1.5; }
   .card__heading-span {
     padding: 0.8rem 1.5rem;
     -webkit-box-decoration-break: clone;
