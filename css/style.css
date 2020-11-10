@@ -210,7 +210,8 @@ button:focus {
   .header__text-box {
     position: absolute;
     top: 33%;
-    right: 3%; }
+    right: 3%;
+    text-align: center; }
     @media screen and (max-width: 1060px) {
       .header__text-box {
         top: 35%;
@@ -223,7 +224,8 @@ button:focus {
     font-size: 5rem;
     font-weight: 400;
     font-style: italic;
-    font-family: 'Caveat', cursive;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 400;
     color: #fff; }
   .header__quote::before {
     content: "\201C";
@@ -312,6 +314,7 @@ button:focus {
         padding: 1rem 0; } }
   .header__menu-box.active {
     display: flex;
+    flex-direction: column-reverse;
     text-align: center; }
   .header__menu {
     display: flex;
