@@ -148,7 +148,6 @@ button:focus {
   left: 0;
   width: 100%;
   background-image: linear-gradient(to right bottom, rgba(0, 217, 255, 0.8), rgba(40, 105, 180, 0.8)), url(../img/header-background.jpg);
-  border-bottom: 1px solid #5f5f5f;
   z-index: 99999;
   height: auto; }
   @media screen and (max-width: 1200px) {
@@ -214,7 +213,7 @@ button:focus {
     text-align: center; }
     @media screen and (max-width: 1060px) {
       .header__text-box {
-        top: 35%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: fit-content;
@@ -233,7 +232,7 @@ button:focus {
     position: absolute;
     font-family: 'Lato', sans-serif;
     top: -10px;
-    left: -5px;
+    left: 15px;
     color: #fff; }
   .header__cite {
     position: absolute;
