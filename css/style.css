@@ -181,6 +181,9 @@ button:focus {
   background-size: cover;
   background-image: linear-gradient(to right bottom, rgba(0, 217, 255, 0.8), rgba(40, 105, 180, 0.8)), url(../img/header-background.jpg);
   background-attachment: fixed; }
+  @media screen and (max-width: 1060px) {
+    .header {
+      height: 80vh; } }
   .header__contact {
     max-width: 100rem;
     margin: 0 auto;
@@ -213,7 +216,7 @@ button:focus {
     text-align: center; }
     @media screen and (max-width: 1060px) {
       .header__text-box {
-        top: 40%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: fit-content;
@@ -225,6 +228,9 @@ button:focus {
     font-family: 'Courgette', cursive, sans-serif;
     font-weight: 400;
     color: #fff; }
+    @media screen and (max-width: 1200px) {
+      .header__quote {
+        font-size: 4rem; } }
   .header__quote::before {
     content: "\201C";
     font-size: 300%;
@@ -234,6 +240,9 @@ button:focus {
     top: -10px;
     left: 15px;
     color: #fff; }
+    @media screen and (max-width: 1200px) {
+      .header__quote::before {
+        font-size: 250%; } }
   .header__cite {
     position: absolute;
     top: 95%;
@@ -367,6 +376,9 @@ button:focus {
 .section__about {
   padding-top: 12rem;
   padding-bottom: 4rem; }
+  @media screen and (max-width: 1060px) {
+    .section__about {
+      padding-top: 6rem; } }
 
 .section__catalog {
   padding: 8rem 0; }
