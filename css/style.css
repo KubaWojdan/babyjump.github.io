@@ -204,12 +204,6 @@ button:focus {
     text-decoration: none;
     color: #bb1fa6;
     font-size: 3rem; }
-  .header__img {
-    max-width: 45rem;
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    z-index: 100; }
   .header__text-box {
     position: absolute;
     top: 33%;
@@ -302,7 +296,8 @@ button:focus {
     top: 0;
     left: 0;
     transition: 0.6s;
-    height: 11rem; }
+    height: 11rem;
+    position: relative; }
     @media screen and (max-width: 1200px) {
       .header__navigation {
         flex-direction: column;
@@ -711,7 +706,7 @@ button:focus {
         height: 38rem; } }
     @media only screen and (max-width: 530px) {
       .feature__img {
-        height: 33rem; } }
+        height: 35rem; } }
     @media only screen and (max-width: 330px) {
       .feature__img {
         height: 30rem; } }
