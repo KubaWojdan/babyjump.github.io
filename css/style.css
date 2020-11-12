@@ -180,6 +180,7 @@ button:focus {
   position: relative;
   height: 100vh;
   background-size: cover;
+  background-position: center;
   background-image: linear-gradient(to right bottom, rgba(0, 217, 255, 0.8), rgba(40, 105, 180, 0.8)), url(../img/header-background.jpg);
   background-attachment: fixed; }
   @media screen and (max-width: 1060px) {
@@ -204,11 +205,20 @@ button:focus {
     text-decoration: none;
     color: #bb1fa6;
     font-size: 3rem; }
+  .header__contact-link:hover {
+    text-decoration: none;
+    color: #bb1fa6; }
   .header__text-box {
     position: absolute;
     top: 33%;
     right: 3%;
     text-align: center; }
+    .header__text-box p {
+      color: #fff;
+      font-size: 2rem;
+      font-style: italic;
+      max-width: 30rem;
+      border-top: 3px solid #bb1fa6; }
     @media screen and (max-width: 1060px) {
       .header__text-box {
         top: 50%;
@@ -378,6 +388,9 @@ button:focus {
 
 .section__catalog {
   padding: 8rem 0; }
+  @media screen and (max-width: 1060px) {
+    .section__catalog {
+      padding: 4rem 0; } }
 
 .heading-about {
   font-size: 5rem;
@@ -470,7 +483,11 @@ button:focus {
   letter-spacing: .2rem;
   -webkit-background-clip: text;
   display: inline-block;
-  margin-top: 6rem; }
+  margin-top: 4rem;
+  font-size: 5rem; }
+  @media screen and (max-width: 900px) {
+    .heading__catalog {
+      margin-top: 3rem; } }
   @media screen and (max-width: 530px) {
     .heading__catalog {
       letter-spacing: .1rem; } }
@@ -883,3 +900,203 @@ button:focus {
   .footer__copyright {
     color: #f7f7f7;
     padding: 2rem; }
+
+.gallery__heading {
+  font-size: 7rem;
+  color: #fff; }
+  @media screen and (max-width: 900px) {
+    .gallery__heading {
+      font-size: 4rem; } }
+
+.animation-section {
+  padding: 4rem 0; }
+  @media screen and (max-width: 900px) {
+    .animation-section {
+      padding: 2rem; } }
+
+.content {
+  max-width: 114rem;
+  min-height: min-content;
+  margin: 0 auto;
+  font-size: 2rem;
+  border-left: 2px solid #eee;
+  border-top: 2px solid #eee;
+  padding: 2rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 3px 4px 3px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 3px 4px 3px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 3px 4px 3px 0px rgba(50, 50, 50, 0.75); }
+  @media screen and (max-width: 900px) {
+    .content {
+      font-size: 1.6rem; } }
+  .content__heading-box h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    color: #cc54bc; }
+  .content__list-box {
+    width: 100%;
+    color: #1a1a1a; }
+  .content__list {
+    width: 100%;
+    margin: 0 auto;
+    list-style-type: none; }
+    .content__list li {
+      display: flex;
+      align-items: center; }
+    .content__list p {
+      padding-left: 1rem; }
+    .content__list i {
+      color: #5f0350; }
+  .content__animation-offer {
+    margin-top: 2rem; }
+    .content__animation-offer h2 {
+      font-size: 2.5rem;
+      padding: 1rem;
+      color: #cc54bc; }
+  .content__list-box-2 {
+    width: 100%;
+    color: #1a1a1a; }
+    .content__list-box-2 ul {
+      list-style-type: none; }
+
+.birthday-section {
+  padding: 4rem 0; }
+
+.birthday-content {
+  max-width: 114rem;
+  margin: 0 auto;
+  color: #fff; }
+  .birthday-content__heading {
+    text-align: center; }
+    .birthday-content__heading h1 {
+      font-size: 4rem;
+      margin: 0 auto;
+      color: #cc54bc; }
+    .birthday-content__heading h1::after {
+      display: block;
+      height: 2px;
+      background-color: #cc54bc;
+      content: " ";
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 1rem; }
+  .birthday-content__text {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #555; }
+    @media screen and (max-width: 900px) {
+      .birthday-content__text {
+        width: 90%; } }
+  .birthday-content__feature {
+    max-width: 30rem;
+    margin: 0 auto;
+    border-radius: 3px;
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 212, 0.8), rgba(204, 84, 188, 0.8)); }
+  .birthday-content__card {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px; }
+    .birthday-content__card i {
+      font-size: 7rem;
+      padding: 1rem; }
+    .birthday-content__card h3 {
+      font-size: 2.5rem;
+      padding: 1rem; }
+    .birthday-content__card p {
+      margin-top: 2rem;
+      font-size: 2rem; }
+  .birthday-content__extra {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 212, 0.8), rgba(204, 84, 188, 0.8));
+    color: #fff; }
+    .birthday-content__extra h3 {
+      font-size: 3rem; }
+    .birthday-content__extra ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .birthday-content__extra ul li {
+        margin-left: 1rem;
+        font-size: 2rem; }
+
+.bcard {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 42rem; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .bcard {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); } }
+  .bcard__side {
+    height: 42rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      .bcard__side {
+        height: auto;
+        position: relative;
+        -webkit-box-shadow: none;
+        box-shadow: none; } }
+    .bcard__side--front {
+      background-color: #fff; }
+  .bcard__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .bcard__picture--9--pink {
+      background-image: url(../img/birthday-card.jpg); }
+  .bcard__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 85%;
+    line-height: 1.5; }
+  .bcard__heading-span {
+    padding: 0.8rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .bcard__heading-span--pink {
+      background-image: linear-gradient(to right bottom, rgba(255, 0, 212, 0.8), rgba(204, 84, 188, 0.8)); }
+  .bcard__details {
+    text-align: center; }
+  .bcard__details p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+    font-size: 2.5rem;
+    color: #555; }
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      .bcard__details p {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.5rem; } }
