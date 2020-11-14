@@ -947,6 +947,11 @@ button:focus {
       padding-left: 1rem; }
     .content__list i {
       color: #5f0350; }
+  .content__image-box {
+    width: 80%;
+    margin: 0 auto; }
+    .content__image-box img {
+      width: 100%; }
   .content__animation-offer {
     margin-top: 2rem; }
     .content__animation-offer h2 {
