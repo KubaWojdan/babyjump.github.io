@@ -262,43 +262,6 @@ button:focus {
     @media only screen and (max-width: 330px) {
       .header__logo {
         height: 6.5rem; } }
-  .header__search-box {
-    height: 4rem;
-    background-image: linear-gradient(to right bottom, rgba(255, 0, 212, 0.8), rgba(204, 84, 188, 0.8));
-    border-radius: 40px;
-    margin-left: 2rem; }
-    @media screen and (max-width: 1200px) {
-      .header__search-box {
-        margin-left: 0; } }
-  .header__search-box:hover > .header__input {
-    width: 16rem;
-    padding: 0 0.6rem; }
-  .header__search-box:hover > .header__search-btn {
-    background-color: #fff; }
-  .header__input {
-    border: none;
-    outline: none;
-    float: left;
-    background: none;
-    color: #fff;
-    padding: 0;
-    line-height: 4rem;
-    font-size: 1.6rem;
-    transition: 0.4s;
-    width: 0rem; }
-  .header__input::placeholder {
-    color: #fff; }
-  .header__search-btn {
-    width: 4rem;
-    height: 4rem;
-    float: right;
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-image: linear-gradient(to right bottom, rgba(255, 0, 212, 0.8), rgba(204, 84, 188, 0.8)); }
   .header__navigation {
     display: flex;
     justify-content: space-around;
@@ -935,18 +898,32 @@ button:focus {
     color: #cc54bc; }
   .content__list-box {
     width: 100%;
-    color: #1a1a1a; }
+    color: #1a1a1a;
+    margin-top: 2rem;
+    text-align: center; }
   .content__list {
     width: 100%;
     margin: 0 auto;
-    list-style-type: none; }
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.7rem;
+    padding: 1rem; }
+    @media screen and (max-width: 530px) {
+      .content__list {
+        font-size: 1.5rem; } }
     .content__list li {
       display: flex;
       align-items: center; }
+      .content__list li p {
+        margin-bottom: 0; }
     .content__list p {
       padding-left: 1rem; }
     .content__list i {
-      color: #5f0350; }
+      color: #0d6aa8;
+      font-size: 2rem; }
   .content__image-box {
     width: 80%;
     margin: 0 auto; }
@@ -972,19 +949,26 @@ button:focus {
   margin: 0 auto;
   color: #fff; }
   .birthday-content__heading {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 2rem; }
     .birthday-content__heading h1 {
       font-size: 4rem;
-      margin: 0 auto;
-      color: #cc54bc; }
+      margin: 0 auto; }
     .birthday-content__heading h1::after {
       display: block;
       height: 2px;
-      background-color: #cc54bc;
       content: " ";
       width: 100px;
       margin: 0 auto;
       margin-top: 1rem; }
+  .birthday-content__heading--blue {
+    color: #3c97d4; }
+    .birthday-content__heading--blue h1::after {
+      background-color: #3c97d4; }
+  .birthday-content__heading--pink {
+    color: #cc54bc; }
+    .birthday-content__heading--pink h1::after {
+      background-color: #cc54bc; }
   .birthday-content__text {
     width: 70%;
     text-align: center;
@@ -1028,11 +1012,17 @@ button:focus {
     .birthday-content__extra ul {
       list-style: none;
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
-      justify-content: center; }
+      align-items: center;
+      margin-bottom: 0;
+      text-align: center; }
       .birthday-content__extra ul li {
-        margin-left: 1rem;
         font-size: 2rem; }
+  .birthday-content__extra--pink {
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 212, 0.8), rgba(204, 84, 188, 0.8)); }
+  .birthday-content__extra--blue {
+    background-image: linear-gradient(to right bottom, rgba(0, 217, 255, 0.8), rgba(40, 105, 180, 0.8)); }
 
 .bcard {
   perspective: 150rem;
@@ -1085,13 +1075,18 @@ button:focus {
     top: 12rem;
     right: 2rem;
     width: 85%;
-    line-height: 1.5; }
+    line-height: 1.9; }
+    @media screen and (max-width: 530px) {
+      .bcard__heading {
+        line-height: 1.6; } }
   .bcard__heading-span {
     padding: 0.8rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .bcard__heading-span--pink {
       background-image: linear-gradient(to right bottom, rgba(255, 0, 212, 0.8), rgba(204, 84, 188, 0.8)); }
+    .bcard__heading-span--blue {
+      background-image: linear-gradient(to right bottom, rgba(0, 217, 255, 0.8), rgba(40, 105, 180, 0.8)); }
   .bcard__details {
     text-align: center; }
   .bcard__details p {
